@@ -1,0 +1,49 @@
+//>>>>> Header Top Start <<<<<//
+.header-top-section {
+	position: relative;
+	background: var(--bg-color);
+	.call-icon{
+		font-size: 13px;
+		color: var(--black-clr);
+		i{
+			color: var(--theme-clr);
+		}
+	}
+	.right-top-cont {
+		.line {
+			width: 1px;
+			height: 20px;
+			background: #ffffff;
+			opacity: 20%;
+		}
+		.nice-select {
+			padding-right: 16px;
+			.current {
+				color: #fff;
+				font-weight: 400;
+				font-size: 14px;
+			}
+			&::after {
+				border-bottom: 2px solid #fff;
+				border-right: 2px solid #fff;
+			}
+			.list {
+				width: 130px;
+			}
+		}
+	}
+}
+
+//>>>>> Sticky Start <<<<</
+.sticky {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	transition: all 0.9s;
+	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+	animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+

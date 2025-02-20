@@ -1,0 +1,175 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$heading-font: "Mulish", serif;
+$sub-font: "Mulish", serif;
+$body-font: "Mulish", serif;
+
+
+html {
+	scroll-behavior: initial !important;
+}
+
+body {
+	font-family: $body-font;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 28px;
+	background-color: var(--white-clr);
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font;
+	margin: 0px;
+	padding: 0;
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 72px;
+	@include breakpoint(max-xxl) {
+		font-size: 50px;
+		line-height: 62px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 42px;
+		line-height: 52px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 38px;
+		line-height: 48px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
+
+.fs-two,
+h2 {
+	font-size: 50px;
+	line-height: 116%;
+	@include breakpoint(max-xl) {
+		font-size: 42px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 36px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 28px;
+	}
+}
+h3 {
+	font-size: 30px;
+	line-height: 130%;
+	@include breakpoint(max-xxl) {
+		font-size: 27px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 22px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 22px;
+	}
+}
+
+h4 {
+	font-size: 25px;
+	line-height: 130%;
+	@include breakpoint(max-xxl) {
+		font-size: 22px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 20px;
+	}
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 145%;
+}
+.fs-five {
+	font-size: 24px !important;
+	@include breakpoint(max-xl) {
+		font-size: 20px !important;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 19px !important;
+	}
+	@include breakpoint(max-md) {
+		font-size: 18px !important;
+	}
+}
+
+a {
+	text-decoration: none;
+	outline: none !important;
+	cursor: pointer;
+}
+
+p {
+	margin: 0px;
+	font-family: $body-font;
+	font-size: 16px;
+	line-height: 25.6px;
+}
+
+span {
+	font-size: 16px;
+	line-height: 25.6px;
+	letter-spacing: 2px;
+	margin: 0px;
+	@include breakpoint(max-xl) {
+		letter-spacing: 1px;
+	}
+}
+
+.p1-clr {
+	color: var(--p1-clr);
+}
+.p1-bg {
+	background: var(--p1-clr);
+}
+
+//GLobal Center
+.d-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+//GLobal Center
+

@@ -1,0 +1,88 @@
+//page scroll bar add
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px var(--theme-clr);
+	border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--theme-clr);
+	border-radius: 10px;
+}
+//page scroll bar add
+
+
+//>>>>> Nice Select Css Start <<<<<//
+.nice-select {
+	background-color: transparent;
+	border: transparent;
+	float: initial;
+	overflow: initial;
+	height: initial;
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+	line-height: 150%;
+	width: 100%;
+	border: none;
+
+	&:focus,
+	&:hover {
+		border-color: transparent;
+	}
+
+	&::after {
+		height: 8px;
+		width: 8px;
+		right: 0;
+		top: 15px;
+		border-color: var(--black-clr);
+		border-bottom: 2px solid var(--black-clr);
+		border-right: 2px solid var(--black-clr);
+	}
+
+	.list {
+		width: initial;
+		background-color: #fff;
+		box-shadow: none;
+		overflow: initial;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+		width: 100%;
+		top: 100%;
+		padding: 0;
+		max-height: 50vh;
+		overflow-x: auto;
+		left: 0;
+		&::-webkit-scrollbar {
+			width: 2px;
+			opacity: 1;
+			display: block;
+		}
+		&::-webkit-scrollbar-button,
+		&::-webkit-scrollbar-thumb {
+			background: var(--black-clr);
+		}
+	}
+	.option {
+		background-color: transparent;
+		font-size: 16px;
+		line-height: 150%;
+		padding: 4px 5px;
+		min-height: initial;
+		font-weight: 500;
+		&:hover,
+		&:focus,
+		&.selected.focus {
+			background-color: transparent;
+		}
+	}
+	.current {
+		font-weight: 500;
+		color: var(--black-clr);
+	}
+}
+//>>>>> Nice Select Css End <<<<<//

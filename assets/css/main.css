@@ -1,0 +1,350 @@
+/*------------------------------------------------------------------
+Project:        6Valley
+Author URI:     https: ..............
+Version:        1.1
+File:           Css File
+Last change:    21/02/2025
+Assigned to:    6Valley Best Online Shopping Experience
+Primary use:    Online Shopping 
+-------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --body: #fff;
+  --black-clr: #222222;
+  --heading-clr: #181615;
+  --white-clr: #fff;
+  --theme-clr: #1455AC;
+  --secondary-clr: #DB3022;
+  --paragraph-clr: #9B9B9B;
+  --bg-color: #EDF5FF;
+}
+
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+html {
+  scroll-behavior: initial !important;
+}
+
+body {
+  font-family: "Mulish", serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  background-color: var(--white-clr);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mulish", serif;
+  margin: 0px;
+  padding: 0;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 72px;
+}
+@media (max-width: 1399px) {
+  h1 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.fs-two,
+h2 {
+  font-size: 50px;
+  line-height: 116%;
+}
+@media (max-width: 1199px) {
+  .fs-two,
+  h2 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-two,
+  h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .fs-two,
+  h2 {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 130%;
+}
+@media (max-width: 1399px) {
+  h3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 1199px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 575px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 130%;
+}
+@media (max-width: 1399px) {
+  h4 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1199px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 145%;
+}
+
+.fs-five {
+  font-size: 24px !important;
+}
+@media (max-width: 1199px) {
+  .fs-five {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 991px) {
+  .fs-five {
+    font-size: 19px !important;
+  }
+}
+@media (max-width: 767px) {
+  .fs-five {
+    font-size: 18px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+p {
+  margin: 0px;
+  font-family: "Mulish", serif;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+span {
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 2px;
+  margin: 0px;
+}
+@media (max-width: 1199px) {
+  span {
+    letter-spacing: 1px;
+  }
+}
+
+.p1-clr {
+  color: var(--p1-clr);
+}
+
+.p1-bg {
+  background: var(--p1-clr);
+}
+
+.d-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top-section {
+  position: relative;
+  background: var(--bg-color);
+}
+.header-top-section .call-icon {
+  font-size: 13px;
+  color: var(--black-clr);
+}
+.header-top-section .call-icon i {
+  color: var(--theme-clr);
+}
+.header-top-section .right-top-cont .line {
+  width: 1px;
+  height: 20px;
+  background: #ffffff;
+  opacity: 20%;
+}
+.header-top-section .right-top-cont .nice-select {
+  padding-right: 16px;
+}
+.header-top-section .right-top-cont .nice-select .current {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.header-top-section .right-top-cont .nice-select::after {
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.header-top-section .right-top-cont .nice-select .list {
+  width: 130px;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.9s;
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--theme-clr);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--theme-clr);
+  border-radius: 10px;
+}
+
+.nice-select {
+  background-color: transparent;
+  border: transparent;
+  float: initial;
+  overflow: initial;
+  height: initial;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  line-height: 150%;
+  width: 100%;
+  border: none;
+}
+.nice-select:focus, .nice-select:hover {
+  border-color: transparent;
+}
+.nice-select::after {
+  height: 8px;
+  width: 8px;
+  right: 0;
+  top: 15px;
+  border-color: var(--black-clr);
+  border-bottom: 2px solid var(--black-clr);
+  border-right: 2px solid var(--black-clr);
+}
+.nice-select .list {
+  width: initial;
+  background-color: #fff;
+  box-shadow: none;
+  overflow: initial;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  width: 100%;
+  top: 100%;
+  padding: 0;
+  max-height: 50vh;
+  overflow-x: auto;
+  left: 0;
+}
+.nice-select .list::-webkit-scrollbar {
+  width: 2px;
+  opacity: 1;
+  display: block;
+}
+.nice-select .list::-webkit-scrollbar-button, .nice-select .list::-webkit-scrollbar-thumb {
+  background: var(--black-clr);
+}
+.nice-select .option {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 4px 5px;
+  min-height: initial;
+  font-weight: 500;
+}
+.nice-select .option:hover, .nice-select .option:focus, .nice-select .option.selected.focus {
+  background-color: transparent;
+}
+.nice-select .current {
+  font-weight: 500;
+  color: var(--black-clr);
+}/*# sourceMappingURL=main.css.map */

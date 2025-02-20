@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------
+Project:        6Valley
+Author URI:     https: ..............
+Version:        1.1
+File:           Css File
+Last change:    21/02/2025
+Assigned to:    6Valley Best Online Shopping Experience
+Primary use:    Online Shopping 
+-------------------------------------------------------------------*/
+
+//>> Basic Start <<//
+@import "_mixins";
+@import "_variables";
+@import "_typography";
+//>> Basic End <<//
+
+//>> Template Section Style Start <<//
+
+@import "_global";
+@import "_header";
+@import "_helping";
+@import "_hero";
+@import "_product";
+@import "_section";
+
+//>> Template Section Style End <<//
