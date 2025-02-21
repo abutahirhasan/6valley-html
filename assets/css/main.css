@@ -568,6 +568,9 @@ span {
   text-transform: uppercase;
   margin-bottom: 18px;
 }
+.hero-wrapper .finding-menu-area .global-category li {
+  position: relative;
+}
 .hero-wrapper .finding-menu-area .global-category li a {
   padding: 13px 0;
   font-size: 13px;
@@ -586,6 +589,37 @@ span {
 }
 .hero-wrapper .finding-menu-area .global-category li a:hover i {
   color: var(--theme-clr);
+}
+.hero-wrapper .finding-menu-area .global-category li .global-sub-cate {
+  position: absolute;
+  top: 0;
+  left: 102%;
+  z-index: 9;
+  background: var(--white-clr);
+  width: 220px;
+  transition: all 0.4s;
+  transform: translateX(40px);
+  opacity: 0;
+  visibility: hidden;
+}
+.hero-wrapper .finding-menu-area .global-category li .global-sub-cate li a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--black-clr);
+  transition: all 0.4s;
+  padding: 11px 20px;
+  display: block;
+}
+.hero-wrapper .finding-menu-area .global-category li .global-sub-cate li a:not(:last-child) {
+  border-bottom: 1px solid var(--paragraph-clr);
+}
+.hero-wrapper .finding-menu-area .global-category li:hover .global-sub-cate {
+  left: 100%;
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
 }
 .hero-wrapper .finding-menu-area .view-more {
   color: var(--theme-clr);
