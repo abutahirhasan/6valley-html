@@ -141,4 +141,11 @@
 		}
 	}
 }
+.swiper-pagination-bullet{
+	opacity: 1;
+	background: var(--white-clr);
+}
+.swiper-pagination-bullet-active{
+	background: var(--theme-clr);
+}
 //Hero Style
