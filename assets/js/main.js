@@ -17,11 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	$("select").niceSelect();
 
 	//>> Testimonial Slider Start <<//
-	const bannerSectionWrap = new Swiper(".banner-section-wrap", {
-		spaceBetween: 30,
+	const heroSlideWrap = new Swiper(".hero-slide-wrap", {
+		spaceBetween: 10,
 		speed: 1500,
 		loop: true,
-		effect: "fade",
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	//>> Testimonial Slider Start <<//
-	const testimonialSlider = new Swiper(".testimonial-slider", {
+	const flashSlideWrapper = new Swiper(".flash-slide-wrapper", {
 		spaceBetween: 30,
 		speed: 1500,
 		loop: true,
@@ -53,17 +52,59 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 		breakpoints: {
 			1199: {
-				slidesPerView: 1,
+				slidesPerView: 4,
+				spaceBetween: 30,
 			},
 			767: {
-				slidesPerView: 1,
+				slidesPerView: 4,
+				spaceBetween: 16,
 			},
 			575: {
-				slidesPerView: 1,
+				slidesPerView: 3,
+				spaceBetween: 16,
 			},
 			0: {
-				slidesPerView: 1,
+				slidesPerView: 2,
+				spaceBetween: 12,
 			},
 		},
 	});
+
+	//CountDown Timer
+	function startCountdown(durationInSeconds) {
+		let countdownTime = durationInSeconds * 1000;
+		const countdownElement = {
+			days: document.getElementById("days"),
+			hours: document.getElementById("hours"),
+			minutes: document.getElementById("minutes"),
+			seconds: document.getElementById("seconds"),
+		};
+		function updateCountdown() {
+			let timeLeft = countdownTime;
+			let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+			let hours = Math.floor(
+				(timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+			);
+			let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+			let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+			countdownElement.days.textContent = days.toString().padStart(2, "0");
+			countdownElement.hours.textContent = hours.toString().padStart(2, "0");
+			countdownElement.minutes.textContent = minutes
+				.toString()
+				.padStart(2, "0");
+			countdownElement.seconds.textContent = seconds
+				.toString()
+				.padStart(2, "0");
+
+			if (countdownTime <= 0) {
+				clearInterval(timer);
+				alert("Flash Deal Expired!");
+			}
+			countdownTime -= 1000;
+		}
+		updateCountdown();
+		const timer = setInterval(updateCountdown, 1000);
+	}
+	startCountdown(23 * 24 * 60 * 60);
 });

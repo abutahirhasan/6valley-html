@@ -1,3 +1,144 @@
 //Hero Style
-
+.hero-wrapper {
+	border-radius: 5px;
+	background: var(--white-clr);
+	gap: 12px;
+	padding: 20px;
+	box-shadow: 0px 0px 2px 0px rgba(145, 158, 171, 0.2),
+		0px 10px 20px -3px rgba(145, 158, 171, 0.05);
+	display: flex;
+	.finding-menu-area {
+		width: 255px;
+		min-width: 255px;
+		h6 {
+			font-size: 13px;
+			font-weight: 800;
+			color: var(--black-clr);
+			text-transform: uppercase;
+			margin-bottom: 18px;
+		}
+		.global-category {
+			li {
+				a {
+					padding: 13px 0;
+					font-size: 13px;
+					line-height: 18px;
+					font-weight: 600;
+					color: var(--black-clr);
+					transition: all 0.4s;
+					i {
+						color: #4b5864;
+						transition: all 0.4s;
+					}
+					border-bottom: 1px solid rgba(185, 185, 185, 0.2);
+					&:hover {
+						color: var(--theme-clr);
+						i {
+							color: var(--theme-clr);
+						}
+					}
+				}
+			}
+		}
+		.view-more {
+			color: var(--theme-clr);
+			font-size: 12px;
+			font-weight: 600;
+			text-align: center;
+			display: block;
+		}
+	}
+	.hero-thumb-area {
+		.boxes {
+			width: 620px;
+			border-radius: 4px;
+			.hero-slide-wrap {
+				width: 620px;
+				border-radius: 4px;
+				position: relative;
+			}
+		}
+		.right-side-thumb {
+			max-width: 285px;
+			height: 471px;
+			display: block;
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.hero-common-thumb {
+			img {
+				transition: all 0.5s;
+			}
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.hero-thumb-area {
+			.boxes {
+				max-width: 780px;
+				width: 100%;
+				.hero-slide-wrap {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+			.right-side-thumb {
+				max-width: 300px;
+				width: 100%;
+				height: 100%;
+				img {
+					object-fit: cover;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1100px) {
+		.hero-thumb-area {
+			.boxes {
+				max-width: 700px;
+				width: 100%;
+				.hero-slide-wrap {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+			.right-side-thumb {
+				max-width: 300px;
+				width: 100%;
+				height: 100%;
+				img {
+					object-fit: cover;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 10px;
+		display: initial !important;
+		.hero-thumb-area {
+			.boxes {
+				width: 100%;
+				max-width: 100%;
+				.hero-slide-wrap {
+					max-width: 940px;
+					width: 100%;
+				}
+			}
+			.right-side-thumb {
+				max-width: 300px;
+				width: 100%;
+				height: 100%;
+				img {
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
 //Hero Style
