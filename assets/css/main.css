@@ -352,6 +352,112 @@ span {
   border-right: 2px solid var(--paragraph-clr);
 }
 
+.header-section {
+  border-top: 1px solid rgba(185, 185, 185, 0.4);
+  border-bottom: 1px solid rgba(185, 185, 185, 0.4);
+  background: var(--white-clr);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.02);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-wrapper .sixvalley-category-adjust {
+  background: var(--theme-clr);
+  padding: 19px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-wrapper .sixvalley-category-adjust i {
+  color: var(--white-clr);
+}
+.header-wrapper .sixvalley-category-adjust .nice-select {
+  padding-right: 30px;
+}
+.header-wrapper .sixvalley-category-adjust .nice-select .list {
+  width: 250px;
+  max-height: initial;
+}
+.header-wrapper .sixvalley-category-adjust .nice-select .list li {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 14px;
+}
+.header-wrapper .sixvalley-category-adjust .nice-select .current {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--white-clr);
+}
+.header-wrapper .sixvalley-category-adjust .nice-select::after {
+  top: 13px;
+  border-bottom: 2px solid var(--white-clr);
+  border-right: 2px solid var(--white-clr);
+}
+.header-wrapper .main-menu {
+  display: grid;
+  gap: 10px;
+}
+.header-wrapper .main-menu li a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--black-clr);
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.header-wrapper .main-menu li a:hover {
+  color: var(--theme-clr);
+}
+.header-wrapper .login-shopping-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-wrapper .login-shopping-area li .register {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--black-clr);
+  text-transform: uppercase;
+}
+.header-wrapper .login-shopping-area li .register i {
+  color: var(--paragraph-clr);
+  font-size: 17px;
+}
+.header-wrapper .login-shopping-area li a {
+  position: relative;
+}
+.header-wrapper .login-shopping-area li a .counts {
+  width: 15px;
+  min-width: 15px;
+  height: 15px;
+  color: var(--white-clr);
+  background: var(--theme-clr);
+  font-size: 10px;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+}
+.header-wrapper .login-shopping-area .line {
+  height: 22px;
+  width: 1px;
+  background: rgba(185, 185, 185, 0.5);
+}
+@media (min-width: 1200px) {
+  .header-wrapper .main-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-wrapper .main-menu li a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--black-clr);
+    text-transform: uppercase;
+  }
+}
+
 .sticky {
   position: fixed !important;
   top: 0 !important;
