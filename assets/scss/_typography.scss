@@ -104,7 +104,7 @@ h3 {
 }
 
 h4 {
-	font-size: 25px;
+	font-size: 24px;
 	line-height: 130%;
 	@include breakpoint(max-xxl) {
 		font-size: 22px;
@@ -151,11 +151,10 @@ p {
 span {
 	font-size: 16px;
 	line-height: 25.6px;
-	letter-spacing: 2px;
 	margin: 0px;
-	@include breakpoint(max-xl) {
-		letter-spacing: 1px;
-	}
+}
+.fs-eight{
+	font-size: 14px;
 }
 
 .p1-clr {

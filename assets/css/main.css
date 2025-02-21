@@ -15,6 +15,7 @@ Primary use:    Online Shopping
   --white-clr: #fff;
   --theme-clr: #1455AC;
   --secondary-clr: #DB3022;
+  --icon-clr: #515755;
   --paragraph-clr: #9B9B9B;
   --bg-color: #EDF5FF;
 }
@@ -144,7 +145,7 @@ h3 {
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 24px;
   line-height: 130%;
 }
 @media (max-width: 1399px) {
@@ -202,13 +203,11 @@ p {
 span {
   font-size: 16px;
   line-height: 25.6px;
-  letter-spacing: 2px;
   margin: 0px;
 }
-@media (max-width: 1199px) {
-  span {
-    letter-spacing: 1px;
-  }
+
+.fs-eight {
+  font-size: 14px;
 }
 
 .p1-clr {
@@ -228,34 +227,47 @@ span {
 .header-top-section {
   position: relative;
   background: var(--bg-color);
+  padding: 10px 0;
 }
-.header-top-section .call-icon {
+.header-top-section .sub-header-wrapper .call-icon {
   font-size: 13px;
   color: var(--black-clr);
+  font-weight: 500;
 }
-.header-top-section .call-icon i {
+.header-top-section .sub-header-wrapper .call-icon i {
   color: var(--theme-clr);
 }
-.header-top-section .right-top-cont .line {
-  width: 1px;
-  height: 20px;
-  background: #ffffff;
-  opacity: 20%;
+.header-top-section .sub-header-wrapper .right-top-cont {
+  gap: 20px;
 }
-.header-top-section .right-top-cont .nice-select {
+.header-top-section .sub-header-wrapper .right-top-cont .nice-select {
   padding-right: 16px;
 }
-.header-top-section .right-top-cont .nice-select .current {
-  color: #fff;
-  font-weight: 400;
+.header-top-section .sub-header-wrapper .right-top-cont .nice-select .current {
+  color: var(--black-clr);
+  font-weight: 500;
   font-size: 14px;
 }
-.header-top-section .right-top-cont .nice-select::after {
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+.header-top-section .sub-header-wrapper .right-top-cont .nice-select::after {
+  border-bottom: 2px solid var(--icon-clr);
+  border-right: 2px solid var(--icon-clr);
 }
-.header-top-section .right-top-cont .nice-select .list {
+.header-top-section .sub-header-wrapper .right-top-cont .nice-select .list {
   width: 130px;
+}
+.header-top-section .sub-header-wrapper .right-top-cont .seller-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black-clr);
+}
+@media (max-width: 575px) {
+  .header-top-section .sub-header-wrapper {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .header-top-section .sub-header-wrapper .right-top-cont {
+    gap: 16px;
+  }
 }
 
 .sticky {
@@ -347,4 +359,21 @@ span {
 .nice-select .current {
   font-weight: 500;
   color: var(--black-clr);
+}
+
+.flash-sale-wrapper {
+  border-radius: 5px;
+  background: var(--white-clr);
+  box-shadow: 0px 5px 12px 3px rgba(2, 91, 195, 0.05);
+  padding: 30px 0 30px 40px;
+}
+.flash-sale-wrapper .flash-down-area {
+  max-width: 275px;
+}
+.flash-sale-wrapper .flash-down-area h4 {
+  color: var(--theme-clr);
+  font-weight: 600;
+}
+.flash-sale-wrapper .flash-down-area span {
+  color: var(--paragraph-clr);
 }/*# sourceMappingURL=main.css.map */
