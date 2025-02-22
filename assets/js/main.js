@@ -10,6 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	$(".bar-toggle").on("click", function (e) {
+		e.stopPropagation(); // Prevent click from bubbling to the document
+		$(".main-menu").toggleClass("active");
+	});
+
+	// Click outside to remove "active" class
+	$(document).on("click", function (e) {
+		if (!$(e.target).closest(".main-menu, .bar-toggle").length) {
+			$(".main-menu").removeClass("active");
+		}
+	});
+	$(".menu-item a").on("click", function (e) {
+		if ($(window).width() <= 1199) {
+			// Check if the screen width is 1199px or below
+			e.preventDefault(); // Prevent default link action
+			$(this).siblings("ul").slideToggle(300);
+		}
+	});
+
 	//>> Wow Animation Start <<//
 	new WOW().init();
 

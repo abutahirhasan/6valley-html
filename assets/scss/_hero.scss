@@ -47,9 +47,10 @@
 					background: var(--white-clr);
 					width: 220px;
 					transition: all 0.4s;
-					transform: translateX(40px);
+					transform: translateY(50px);
 					opacity: 0;
 					visibility: hidden;
+					box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 					li {
 						a {
 							font-size: 13px;
@@ -67,11 +68,11 @@
 				}
 				&:hover {
 					.global-sub-cate {
-						left: 100%;
-						transform: translateX(0px);
+					// pointer-events: none;
+						left: 103%;
+						transform: translateY(0px);
 						opacity: 1;
 						visibility: visible;
-						pointer-events: none;
 					}
 				}
 			}
