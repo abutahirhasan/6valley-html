@@ -152,6 +152,7 @@
 					text-transform: uppercase;
 					font-size: 14px;
 					padding: 12px 14px;
+					border-bottom: unset;
 				}
 			}
 			.current {
@@ -328,8 +329,52 @@
 					display: none;
 				}
 			}
-			&.active{
+			&.active {
 				left: 0;
+			}
+		}
+		.login-shopping-area {
+			gap: 12px;
+			li {
+				.register {
+					font-size: 12px;
+					font-weight: 500;
+					color: var(--black-clr);
+					text-transform: uppercase;
+					i {
+						color: var(--paragraph-clr);
+						font-size: 17px;
+					}
+				}
+				a {
+					position: relative;
+					.counts {
+						width: 13px;
+						min-width: 13px;
+						height: 15px;
+						font-size: 8px;
+						right: -7px;
+						top: -7px;
+					}
+				}
+			}
+			.line {
+				display: none;
+			}
+		}
+		.browse-category{
+			.logo{
+				max-width: 120px;
+				display: block;
+				img{
+					width: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+		.bar-toggle{
+			i{
+				font-size: 24px;
 			}
 		}
 	}

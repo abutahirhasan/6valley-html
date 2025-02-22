@@ -385,6 +385,7 @@ span {
   text-transform: uppercase;
   font-size: 14px;
   padding: 12px 14px;
+  border-bottom: unset;
 }
 .header-wrapper .sixvalley-category-adjust .nice-select .current {
   text-transform: uppercase;
@@ -548,6 +549,44 @@ span {
   .header-wrapper .main-menu.active {
     left: 0;
   }
+  .header-wrapper .login-shopping-area {
+    gap: 12px;
+  }
+  .header-wrapper .login-shopping-area li .register {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--black-clr);
+    text-transform: uppercase;
+  }
+  .header-wrapper .login-shopping-area li .register i {
+    color: var(--paragraph-clr);
+    font-size: 17px;
+  }
+  .header-wrapper .login-shopping-area li a {
+    position: relative;
+  }
+  .header-wrapper .login-shopping-area li a .counts {
+    width: 13px;
+    min-width: 13px;
+    height: 15px;
+    font-size: 8px;
+    right: -7px;
+    top: -7px;
+  }
+  .header-wrapper .login-shopping-area .line {
+    display: none;
+  }
+  .header-wrapper .browse-category .logo {
+    max-width: 120px;
+    display: block;
+  }
+  .header-wrapper .browse-category .logo img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .header-wrapper .bar-toggle i {
+    font-size: 24px;
+  }
 }
 
 .bar-toggle i {
@@ -604,7 +643,7 @@ span {
   height: 8px;
   width: 8px;
   right: 0;
-  top: 15px;
+  top: 13px;
   border-color: var(--black-clr);
   border-bottom: 2px solid var(--black-clr);
   border-right: 2px solid var(--black-clr);
