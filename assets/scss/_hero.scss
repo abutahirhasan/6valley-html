@@ -158,23 +158,35 @@
 	@include breakpoint(max-lg) {
 		padding: 10px;
 		display: initial !important;
+		height: 100%;
+		.hero-thumb-area {
+			.boxes {
+				width: 100%;
+				max-width: 70%;
+				.hero-slide-wrap {
+					width: 100%;
+				}
+			}
+			.right-side-thumb {
+				max-width: 100%;
+				width: 100%;
+				height: initial !important;
+				img {
+					object-fit: cover;
+					height: 100%;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
 		.hero-thumb-area {
 			.boxes {
 				width: 100%;
 				max-width: 100%;
 				.hero-slide-wrap {
-					max-width: 940px;
 					width: 100%;
 				}
-			}
-			.right-side-thumb {
-				max-width: 300px;
-				width: 100%;
-				height: 100%;
-				img {
-					object-fit: cover;
-				}
-			}
+			} 
 		}
 	}
 }
