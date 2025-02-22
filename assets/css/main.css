@@ -884,7 +884,7 @@ span {
     height: 100%;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .hero-wrapper .hero-thumb-area .boxes {
     width: 100%;
     max-width: 100%;

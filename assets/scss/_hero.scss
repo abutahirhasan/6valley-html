@@ -178,7 +178,7 @@
 			}
 		}
 	}
-	@include breakpoint(max-lg) {
+	@include breakpoint(max-sm) {
 		.hero-thumb-area {
 			.boxes {
 				width: 100%;
